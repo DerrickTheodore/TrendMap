@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/DerrickTheodore/QikFlik#readme",
   "dependencies": {
-    "babel-preset-env": "^1.6.1"
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.10.0"
   }
 }
