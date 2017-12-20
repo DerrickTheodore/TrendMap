@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DerrickTheodore/QikFlik/issues"
   },
-  "homepage": "https://github.com/DerrickTheodore/QikFlik#readme"
+  "homepage": "https://github.com/DerrickTheodore/QikFlik#readme",
+  "dependencies": {
+    "babel-preset-env": "^1.6.1"
+  }
 }
