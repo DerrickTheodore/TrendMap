@@ -1,4 +1,4 @@
-# QikFlik
+# Google-map-tutorial
 ---
 
 Welcome.
