@@ -1,11 +1,11 @@
 import React from 'react';
-import GoogleMap from './GoogleMap.jsx';
+import MyMapComponent from './MyMapComponent.jsx';
 
 const App = () => {
     return (
-      <div>
-        <GoogleMap />
-      </div>
+      <MyMapComponent 
+        isMarkerShown
+      />
     )
 }
 
