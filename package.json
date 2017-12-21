@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "live": "live-sever www",
+    "start": "webpack --watch"
   },
   "repository": {
     "type": "git",
