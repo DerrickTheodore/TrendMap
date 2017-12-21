@@ -1,9 +1,12 @@
 import React from 'react';
+import GoogleMap from './GoogleMap.jsx';
 
-class App extends React.Component {
-  render() {
-    return <h1>Hellooo</h1>
-  }
+const App = () => {
+    return (
+      <div>
+        <GoogleMap />
+      </div>
+    )
 }
 
 export default App;

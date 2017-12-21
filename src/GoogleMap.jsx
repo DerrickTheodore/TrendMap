@@ -1,9 +1,9 @@
-import { Component } from 'react';
+import React from 'react';
 
-class Map extends Component {
+class GoogleMap extends React.Component {
   render() {
-    return <div></div>
+    return <div>MAP!</div>
   }
 }
 
-export default Map;
+export default GoogleMap;
