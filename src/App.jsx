@@ -1,10 +1,9 @@
 import React from 'react';
-import MyMapComponent from './MyMapComponent.jsx';
+import MyFancyComponent from './MyFancyComponent.jsx';
 
 const App = () => {
     return (
-      <MyMapComponent 
-        isMarkerShown
+      <MyFancyComponent
       />
     )
 }
