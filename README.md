@@ -16,7 +16,7 @@ Compile Webpack
 ---
 
 ```
-npm build
+npm run build
 ``` 
 
 Start project server with this command:
