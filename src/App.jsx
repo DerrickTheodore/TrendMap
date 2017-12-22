@@ -1,10 +1,8 @@
 import React from 'react';
-import MyFancyComponent from './MyFancyComponent.jsx';
 
 const App = () => {
     return (
-      <MyFancyComponent
-      />
+      <h1>Hellloooo Wooorrlllddd!</h1>
     )
 }
 

@@ -1,24 +1,24 @@
 {
-  "name": "google-map-tutorial",
+  "name": "react-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "live": "live-sever www",
-    "start": "webpack --watch"
+    "build": "webpack --watch",
+    "start": "live-server www"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DerrickTheodore/google-map-tutorial.git"
+    "url": "git+https://github.com/DerrickTheodore/react-project-boilerplate.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DerrickTheodore/QikFlik/issues"
+    "url": "https://github.com/DerrickTheodore/react-project-boilerplate/issues"
   },
-  "homepage": "https://github.com/DerrickTheodore/QikFlik#readme",
+  "homepage": "https://github.com/DerrickTheodore/react-project-boilerplate#readme",
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",

@@ -1,4 +1,4 @@
-# Google-map-tutorial
+# React-Project-Boilerplate
 ---
 
 Welcome.
@@ -6,24 +6,23 @@ Welcome.
 Usage
 ---
 
-Start the dev server with this command:
+Setup Dependencies
+---
+
+```
+npm install --save || i -S
+
+Compile Webpack
+---
+
+```
+npm build
+``` 
+
+Start project server with this command:
 
 ```
 npm start
 ```
 
-
-Setup
----
-
-```
-npm install
-```
-
-Compile
----
-
-```
-npm run compile
-```
 
