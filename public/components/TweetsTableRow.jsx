@@ -11,7 +11,7 @@ class TweetsTableRow extends React.Component {
   render() {
     return (
       <tr>
-        {[this.props.tweet.user.name, '--', this.props.tweet.text]}
+        {['[[[', this.props.tweet.user, ']]]', this.props.tweet.translatedText, '_', this.props.tweet.detectedSourceLanguage, '_', this.props.tweet.originalText]}
       </tr>
     )
   }

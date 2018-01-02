@@ -3,251 +3,284 @@ module.exports = {
     {
         "translatedText": "Happy 2018",
         "detectedSourceLanguage": "Portuguese",
-        "originalText": "Feliz 2018"
+        "originalText": "Feliz 2018",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "#DomingoDetremuraSDV",
+        "translatedText": "#SecondDetremuraSDV",
         "detectedSourceLanguage": "Spanish",
-        "originalText": "#DomingoDetremuraSDV"
-    },
-    {
-        "translatedText": "Paulista",
-        "detectedSourceLanguage": "Portuguese",
-        "originalText": "Paulista"
+        "originalText": "#SegundaDetremuraSDV",
+        "location": "Sao Paulo"
     },
     {
         "translatedText": "Eve",
         "detectedSourceLanguage": "French",
-        "originalText": "Réveillon"
+        "originalText": "Réveillon",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "Paulista",
+        "detectedSourceLanguage": "Portuguese",
+        "originalText": "Paulista",
+        "location": "Sao Paulo"
     },
     {
         "translatedText": "Whatsapp",
         "detectedSourceLanguage": "Spanish",
-        "originalText": "WhatsApp"
+        "originalText": "WhatsApp",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "Anitta",
-        "detectedSourceLanguage": "Portuguese",
-        "originalText": "Anitta"
-    },
-    {
-        "translatedText": "#NoMeuBBB",
-        "detectedSourceLanguage": "Luxembourgish",
-        "originalText": "#NoMeuBBB"
-    },
-    {
-        "translatedText": "LimanthaWeek",
-        "detectedSourceLanguage": "English",
-        "originalText": "LimanthaWeek"
-    },
-    {
-        "translatedText": "About Me",
-        "detectedSourceLanguage": "Portuguese",
-        "originalText": "#UmCaminhoParaODestino090"
-    },
-    {
-        "translatedText": "ANO NOVO SDV FCS",
-        "detectedSourceLanguage": "English",
-        "originalText": "ANO NOVO SDV FCS"
+        "translatedText": "Mars",
+        "detectedSourceLanguage": "Spanish",
+        "originalText": "Marte",
+        "location": "Sao Paulo"
     },
     {
         "translatedText": "I started2018",
         "detectedSourceLanguage": "Portuguese",
-        "originalText": "#Comecei2018"
+        "originalText": "#Comecei2018",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "Pogba",
-        "detectedSourceLanguage": "Italian",
-        "originalText": "Pogba"
-    },
-    {
-        "translatedText": "#NHLnaESPN",
+        "translatedText": "#collegenaESPN",
         "detectedSourceLanguage": "English",
-        "originalText": "#NHLnaESPN"
+        "originalText": "#collegenaESPN",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "Lingard",
+        "translatedText": "#OOutroLadoaDoParaiso",
+        "detectedSourceLanguage": "Galician",
+        "originalText": "#OOutroLadoaDoParaiso",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "ANO NOVO SDV FCS",
         "detectedSourceLanguage": "English",
-        "originalText": "Lingard"
+        "originalText": "ANO NOVO SDV FCS",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "Palm grove",
-        "detectedSourceLanguage": "Spanish",
-        "originalText": "Palmar"
-    },
-    {
-        "translatedText": "Isabela Garcia",
+        "translatedText": "It's 4 hours",
         "detectedSourceLanguage": "Portuguese",
-        "originalText": "Isabela Garcia"
+        "originalText": "FAZ 4 HORAS",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "Shrek",
+        "translatedText": "#Traditional Council",
+        "detectedSourceLanguage": "Portuguese",
+        "originalText": "#ConselhoTutelar",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "Logan Paul",
         "detectedSourceLanguage": "English",
-        "originalText": "Shrek"
+        "originalText": "Logan Paul",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "Baker Mayfield",
+        "detectedSourceLanguage": "English",
+        "originalText": "Baker Mayfield",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "Humberto Coutinho",
+        "detectedSourceLanguage": "Portuguese",
+        "originalText": "Humberto Coutinho",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "Page 2 of 365",
+        "detectedSourceLanguage": "Portuguese",
+        "originalText": "Página 2 de 365",
+        "location": "Sao Paulo"
     },
     {
         "translatedText": "Lucas Landau",
         "detectedSourceLanguage": "English",
-        "originalText": "Lucas Landau"
+        "originalText": "Lucas Landau",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "Sugar Bowl",
+        "detectedSourceLanguage": "English",
+        "originalText": "Sugar Bowl",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "DeMar DeRozan",
+        "detectedSourceLanguage": "English",
+        "originalText": "DeMar DeRozan",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "Bianca Bin",
+        "detectedSourceLanguage": "English",
+        "originalText": "Bianca Bin",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "Three spy awesome",
+        "detectedSourceLanguage": "Portuguese",
+        "originalText": "Três Espiãs Demais",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "Habibs",
+        "detectedSourceLanguage": "Arabic",
+        "originalText": "Habibs",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "Maria Pia",
+        "detectedSourceLanguage": "Romanian",
+        "originalText": "Maria Pia",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "Sooners",
+        "detectedSourceLanguage": "English",
+        "originalText": "Sooners",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "James Harden",
+        "detectedSourceLanguage": "English",
+        "originalText": "James Harden",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "Nick Arcuri",
+        "detectedSourceLanguage": "Romanian",
+        "originalText": "Nick Arcuri",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "Day 15",
+        "detectedSourceLanguage": "Portuguese",
+        "originalText": "Dia 15",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "It's 365",
+        "detectedSourceLanguage": "Portuguese",
+        "originalText": "São 365",
+        "location": "Sao Paulo"
     },
     {
         "translatedText": "Aparecida de Goiânia",
         "detectedSourceLanguage": "Portuguese",
-        "originalText": "Aparecida de Goiânia"
+        "originalText": "Aparecida de Goiânia",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "Rooney",
-        "detectedSourceLanguage": "English",
-        "originalText": "Rooney"
-    },
-    {
-        "translatedText": "Florida Cup",
-        "detectedSourceLanguage": "English",
-        "originalText": "Florida Cup"
-    },
-    {
-        "translatedText": "Túlio de Melo",
+        "translatedText": "Tancredo",
         "detectedSourceLanguage": "Portuguese",
-        "originalText": "Túlio de Melo"
+        "originalText": "Tancredo",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "Hollywood Women",
+        "translatedText": "Greek islands",
         "detectedSourceLanguage": "Portuguese",
-        "originalText": "Mulheres de Hollywood"
+        "originalText": "Ilhas Gregas",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "Full 2018",
+        "translatedText": "Misadventures",
         "detectedSourceLanguage": "Spanish",
-        "originalText": "Pleno 2018"
+        "originalText": "Desventuras",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "Hamburg",
+        "translatedText": "Glorinha",
         "detectedSourceLanguage": "Portuguese",
-        "originalText": "Hamburgo"
+        "originalText": "Glorinha",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "Bruce Arians",
+        "translatedText": "#NoMeuBBB",
+        "detectedSourceLanguage": "Luxembourgish",
+        "originalText": "#NoMeuBBB",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "#BakeOffSBT",
+        "detectedSourceLanguage": "Norwegian",
+        "originalText": "#BakeOffSBT",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "#superlua",
         "detectedSourceLanguage": "English",
-        "originalText": "Bruce Arians"
+        "originalText": "#superlua",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "Dom Capers",
-        "detectedSourceLanguage": "English",
-        "originalText": "Dom Capers"
-    },
-    {
-        "translatedText": "Lovesick",
-        "detectedSourceLanguage": "English",
-        "originalText": "Lovesick"
-    },
-    {
-        "translatedText": "Day 01",
+        "translatedText": "# CarinhaDeAnjo291",
         "detectedSourceLanguage": "Portuguese",
-        "originalText": "Dia 01"
+        "originalText": "#CarinhaDeAnjo291",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "Hong Kong",
-        "originalText": "Hong Kong"
+        "translatedText": "#planetagelado",
+        "detectedSourceLanguage": "Spanish",
+        "originalText": "#planetagelado",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "Klavan",
-        "detectedSourceLanguage": "Estonian",
-        "originalText": "Klavan"
+        "translatedText": "#Titanic",
+        "detectedSourceLanguage": "English",
+        "originalText": "#Titanic",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "Series",
+        "translatedText": "# FanaticsDaVila",
+        "detectedSourceLanguage": "Spanish",
+        "originalText": "#FanáticosDaVila",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "# OsTrapalhõesNoViva",
+        "detectedSourceLanguage": "Bulgarian",
+        "originalText": "#OsTrapalhõesNoViva",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "# Vem2019",
         "detectedSourceLanguage": "French",
-        "originalText": "Série"
+        "originalText": "#Vem2019",
+        "location": "Sao Paulo"
     },
     {
-        "translatedText": "VIXX",
+        "translatedText": "Love time",
+        "detectedSourceLanguage": "Portuguese",
+        "originalText": "#HoraDoAmor",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "#AmorProibido",
         "detectedSourceLanguage": "English",
-        "originalText": "VIXX"
-    },
-    {
-        "translatedText": "Superlua",
-        "detectedSourceLanguage": "English",
-        "originalText": "Superlua"
-    },
-    {
-        "translatedText": "#MessVocenVIVA",
-        "detectedSourceLanguage": "Latvian",
-        "originalText": "#MaisVocenoVIVA"
-    },
-    {
-        "translatedText": "#Celebrity",
-        "detectedSourceLanguage": "Portuguese",
-        "originalText": "#Celebridade"
-    },
-    {
-        "translatedText": "# Sortilegio055",
-        "detectedSourceLanguage": "French",
-        "originalText": "#Sortilegio055"
-    },
-    {
-        "translatedText": "# PontoKpop10",
-        "detectedSourceLanguage": "Hungarian",
-        "originalText": "#PontoKpop10"
-    },
-    {
-        "translatedText": "#CollegeNaESPN",
-        "detectedSourceLanguage": "English",
-        "originalText": "#CollegeNaESPN"
-    },
-    {
-        "translatedText": "#batebola",
-        "detectedSourceLanguage": "Malagasy",
-        "originalText": "#batebola"
-    },
-    {
-        "translatedText": "#AlwaysWithRM",
-        "detectedSourceLanguage": "English",
-        "originalText": "#AlwaysWithRM"
-    },
-    {
-        "translatedText": "#ABailarKS",
-        "detectedSourceLanguage": "Hindi",
-        "originalText": "#ABailarKS"
-    },
-    {
-        "translatedText": "#coelhoresponde",
-        "detectedSourceLanguage": "Portuguese",
-        "originalText": "#coelhoresponde"
-    },
-    {
-        "translatedText": "#General balance",
-        "detectedSourceLanguage": "Portuguese",
-        "originalText": "#BalançoGeral"
-    },
-    {
-        "translatedText": "#TIMESUP",
-        "detectedSourceLanguage": "Croatian",
-        "originalText": "#TIMESUP"
-    },
-    {
-        "translatedText": "# Highlights2017",
-        "detectedSourceLanguage": "Portuguese",
-        "originalText": "#DestaquesDe2017"
-    },
-    {
-        "translatedText": "#JornalHoje",
-        "detectedSourceLanguage": "Portuguese",
-        "originalText": "#JornalHoje"
+        "originalText": "#AmorProibido",
+        "location": "Sao Paulo"
     },
     {
         "translatedText": "#HappyNewYear",
         "detectedSourceLanguage": "English",
-        "originalText": "#HappyNewYear"
+        "originalText": "#HappyNewYear",
+        "location": "Sao Paulo"
+    },
+    {
+        "translatedText": "#showdavirada",
+        "detectedSourceLanguage": "English",
+        "originalText": "#showdavirada",
+        "location": "Sao Paulo"
     },
     {
         "translatedText": "#BTSxRockinEve",
         "detectedSourceLanguage": "English",
-        "originalText": "#BTSxRockinEve"
-    },
-    {
-        "translatedText": "#Brumar",
-        "detectedSourceLanguage": "Corsican",
-        "originalText": "#Brumar"
+        "originalText": "#BTSxRockinEve",
+        "location": "Sao Paulo"
     }
 ],
 tweets_at: {
@@ -2498,5 +2531,97 @@ tweets_at: {
       "since_id": 0,
       "since_id_str": "0"
   }
-}
+},
+ translatedTweets: [
+  {
+      "translatedText": "Today's #LFC side to face Burnley at Turf Moor...\n\nhttps://t.co/SljSS8z9x4 https://t.co/3zckrTkKts",
+      "detectedSourceLanguage": "English",
+      "originalText": "Today's #LFC side to face Burnley at Turf Moor...\n\nhttps://t.co/SljSS8z9x4 https://t.co/3zckrTkKts",
+      "user": "Liverpool FC"
+  },
+  {
+      "translatedText": "This Burnley fan has made an absolute fool of himself here. Embarrassing 😂 https://t.co/F92UOGc1Cs",
+      "detectedSourceLanguage": "English",
+      "originalText": "This Burnley fan has made an absolute fool of himself here. Embarrassing 😂 https://t.co/F92UOGc1Cs",
+      "user": "The Redmen TV"
+  },
+  {
+      "translatedText": "Big fan of Alex Oxlade-Chamberlain blowing kisses to the Burnley fans as he walked down the tunnel at the end there! 😘",
+      "detectedSourceLanguage": "English",
+      "originalText": "Big fan of Alex Oxlade-Chamberlain blowing kisses to the Burnley fans as he walked down the tunnel at the end there! 😘",
+      "user": "Oliver Bond"
+  },
+  {
+      "translatedText": "FULL-TIME Burnley 1-2 Liverpool\n\nThe Reds steal three points late on with Mane & Klavan getting on the scoresheet… https://t.co/U91ZXDkA14",
+      "detectedSourceLanguage": "English",
+      "originalText": "FULL-TIME Burnley 1-2 Liverpool\n\nThe Reds steal three points late on with Mane &amp; Klavan getting on the scoresheet… https://t.co/U91ZXDkA14",
+      "user": "Premier League"
+  },
+  {
+      "translatedText": "GOAL Burnley 1-2 Liverpool (90+4)\n\nDejan Lovren heads a free-kick back across the face of goal for Ragnar Klavan to… https://t.co/jum1AihakL",
+      "detectedSourceLanguage": "English",
+      "originalText": "GOAL Burnley 1-2 Liverpool (90+4)\n\nDejan Lovren heads a free-kick back across the face of goal for Ragnar Klavan to… https://t.co/jum1AihakL",
+      "user": "Premier League"
+  },
+  {
+      "translatedText": "BREAKING: Philippe Coutinho has not been included in Liverpool’s squad to face Burnley today, reports… https://t.co/npaWl01tas",
+      "detectedSourceLanguage": "English",
+      "originalText": "BREAKING: Philippe Coutinho has not been included in Liverpool’s squad to face Burnley today, reports… https://t.co/npaWl01tas",
+      "user": "B/R Football"
+  },
+  {
+      "translatedText": "Goal - KLAVAN\nAssist - LOVREN \n\nBurnley 1-2 Liverpool (90+4 mins) #FPL #BURLIV",
+      "detectedSourceLanguage": "English",
+      "originalText": "Goal - KLAVAN\nAssist - LOVREN \n\nBurnley 1-2 Liverpool (90+4 mins) #FPL #BURLIV",
+      "user": "Fantasy Premier League"
+  },
+  {
+      "translatedText": "#LFC coach arrives at Burnley. No Salah and no Coutinho",
+      "detectedSourceLanguage": "English",
+      "originalText": "#LFC coach arrives at Burnley. No Salah and no Coutinho",
+      "user": "James Pearce"
+  },
+  {
+      "translatedText": "HAPPY NEW YEAR | Burnley Football Club would like to wish you all a happy new year. What an incredible 2017 we had… https://t.co/WlTDkB8LbC",
+      "detectedSourceLanguage": "English",
+      "originalText": "HAPPY NEW YEAR | Burnley Football Club would like to wish you all a happy new year. What an incredible 2017 we had… https://t.co/WlTDkB8LbC",
+      "user": "Burnley FC"
+  },
+  {
+      "translatedText": "First start of the 2017/18 season for @officialAL20. 👍\n\nhttps://t.co/SljSS8z9x4 https://t.co/jSAFtXMzYr",
+      "detectedSourceLanguage": "English",
+      "originalText": "First start of the 2017/18 season for @officialAL20. 👍\n\nhttps://t.co/SljSS8z9x4 https://t.co/jSAFtXMzYr",
+      "user": "Liverpool FC"
+  },
+  {
+      "translatedText": "6️⃣ points in 4️⃣8️⃣ hours. \n\nhttps://t.co/gldcAQZPLt https://t.co/ZtdNabc8EC",
+      "detectedSourceLanguage": "English",
+      "originalText": "6️⃣ points in 4️⃣8️⃣ hours. \n\nhttps://t.co/gldcAQZPLt https://t.co/ZtdNabc8EC",
+      "user": "Liverpool FC"
+  },
+  {
+      "translatedText": "GOAL Burnley 1-1 Liverpool (88 mins)\n\nBig moment late on! Sam Vokes flicks on for Johann Berg Gudmundsson who conve… https://t.co/RmihB0kl6T",
+      "detectedSourceLanguage": "English",
+      "originalText": "GOAL Burnley 1-1 Liverpool (88 mins)\n\nBig moment late on! Sam Vokes flicks on for Johann Berg Gudmundsson who conve… https://t.co/RmihB0kl6T",
+      "user": "Premier League"
+  },
+  {
+      "translatedText": "HALF-TIME\n\nBurnley 0-0 Liverpool\nLeicester 0-0 Huddersfield\nStoke 0-0 Newcastle\n\n#PL https://t.co/fweYqOJQJy",
+      "detectedSourceLanguage": "English",
+      "originalText": "HALF-TIME\n\nBurnley 0-0 Liverpool\nLeicester 0-0 Huddersfield\nStoke 0-0 Newcastle\n\n#PL https://t.co/fweYqOJQJy",
+      "user": "Premier League"
+  },
+  {
+      "translatedText": "✅ Bournemouth\n✅ Liverpool\n✅ Watford\n✅ Palace\n✅ Chelsea\n✅ Stoke\n✅ Burnley\n✅ West Brom\n✅ Arsenal\n✅ Leicester\n✅ Hudder… https://t.co/cTDr3rppkL",
+      "detectedSourceLanguage": "English",
+      "originalText": "✅ Bournemouth\n✅ Liverpool\n✅ Watford\n✅ Palace\n✅ Chelsea\n✅ Stoke\n✅ Burnley\n✅ West Brom\n✅ Arsenal\n✅ Leicester\n✅ Hudder… https://t.co/cTDr3rppkL",
+      "user": "Sky Bet"
+  },
+  {
+      "translatedText": "Salah (groin), Coutinho (thigh) the injury absentees for LFC at Burnley. Both expected to be fit for FA Cup next week.",
+      "detectedSourceLanguage": "English",
+      "originalText": "Salah (groin), Coutinho (thigh) the injury absentees for LFC at Burnley. Both expected to be fit for FA Cup next week.",
+      "user": "Chris Bascombe"
+  }
+]
 }

@@ -17,7 +17,7 @@ class TreadingTable extends React.Component {
           <tr>
             {Object.keys(this.props.trends[0]).map((header, index) => <TreadingTableRowHead key={index} header={header} />)}
           </tr>
-            {this.props.trends.map((trend, index) => <TreadingTableRow key={index} trend={trend} />)} 
+            {this.props.trends.map((trend, index) => <TreadingTableRow handleTrendClick={this.props.handleTrendClick.bind(this)} key={index} trend={trend} />)} 
         </tbody>
       </table>
     )

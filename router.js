@@ -48,6 +48,7 @@ router.get('/trends-at/:loc', (req, res) => {
               .then((results) => {
                 for(let resultIdx=0; resultIdx < results.length; resultIdx++) {
                  results[resultIdx].detectedSourceLanguage = supportedLanguages[results[resultIdx].detectedSourceLanguage]
+                 results[resultIdx].location = location;
                 }
                 res.status(200).send(results);
               })
@@ -69,7 +70,25 @@ router.get('/tweets-with/:trending_topic/trends_at/:location', (req, res) => {
       res.status(500).send(body);
     }, (data) => {
       let tweets = JSON.parse(data);
-      res.status(200).send(tweets);
+      const translatedTweets = [];
+          
+            for(tweet of tweets.statuses) {
+              translatedTweets.push(new Promise((resolve, reject) => {
+                googleTranslate.translate(tweet.text, 'en', (err, translation) => {
+                  if(err) reject(err)
+                  resolve(translation);
+                });
+              }))
+            }
+              Promise.all(translatedTweets)
+              .then((results) => {
+                for(let resultIdx=0; resultIdx < results.length; resultIdx++) {
+                 results[resultIdx].detectedSourceLanguage = supportedLanguages[results[resultIdx].detectedSourceLanguage]
+                 results[resultIdx].user = tweets.statuses[resultIdx].user.name;
+                }
+                res.status(200).send(results);
+              })
+              .catch(err => console.error(err));
     })
   })
 })

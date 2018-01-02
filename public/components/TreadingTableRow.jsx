@@ -13,6 +13,7 @@ class TreadingTableRow extends React.Component {
     return (
       <tr>
         {Object.values(this.props.trend).map((trend, index) => <TreadingTableRowData data={trend} key={index}/>)}
+        <button type="submit" onClick={() => {this.props.handleTrendClick(this.props.trend)}} >tweets?</button>
       </tr>
     )
   }
