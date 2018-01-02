@@ -12,7 +12,7 @@ class TweetsTableRow extends React.Component {
   render() {
     return (
       <tr>
-        {Object.values(this.props.tweet).map(tweet => <TweetsTableRowData data={tweet}/>)}
+        {Object.values(this.props.tweet).map((tweet, index) => <TweetsTableRowData data={tweet} key={index}/>)}
       </tr>
     )
   }

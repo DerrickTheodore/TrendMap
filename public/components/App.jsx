@@ -8,13 +8,13 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      trendingTopics: exampleData.trends_at,
-      tweets: exampleData.translatedTweets,
+      trendingTopics: [],
+      tweets: [],
       value: ''
     }
   }
 
-  componentDidMount() {
+  componentWillMount() {
     axios.get(`http://127.0.0.1:8080/search/trends-at/NYC`)
     .then((results) => {
       this.setState({trendingTopics: results.data})
@@ -25,7 +25,6 @@ class App extends React.Component {
       }
       axios.get(`http://127.0.0.1:8080/search/tweets-with/${trend.originalText}/trends_at/${trend.location}`)
       .then((results) => {
-        // console.log('check', results)
         this.setState({tweets: results.data})
       })
       .catch(err => console.error(err));
@@ -53,24 +52,29 @@ class App extends React.Component {
     }
     axios.get(`http://127.0.0.1:8080/search/tweets-with/${trend.originalText}/trends_at/${trend.location}`)
     .then((results) => {
-      this.setState({tweets: results.data.statuses})
+      this.setState({tweets: results.data})
     })
     .catch(err => console.error(err));
   }
 
   render() {
-    return (
-      <div>
-        <h4>Search trends in area</h4>
-        <input type="text" value={this.state.value} onChange={(e) => this.handleInputChange(e)}/>
-        <button type="submit" onClick={(e) => this.handleTrendAreaSearch(e)} >search</button>
+      if(!(this.state.trendingTopics.length && this.state.tweets.length)) {
+        return (
+          <h1>Loading...</h1>
+        )
+      } else {
+        return (
+          <div>
+            <h4>Search trends in area</h4>
+            <input type="text" value={this.state.value} onChange={(e) => this.handleInputChange(e)}/>
+            <button type="submit" onClick={(e) => this.handleTrendAreaSearch(e)} >search</button>
 
-        <TreadingTable handleTrendClick={this.handleTrendClick.bind(this)} trends={this.state.trendingTopics}/>
-      
-        <TweetsTable tweets={this.state.tweets} />
-      </div>
-      
-    )
+            <TreadingTable handleTrendClick={this.handleTrendClick.bind(this)} trends={this.state.trendingTopics}/>
+          
+            <TweetsTable tweets={this.state.tweets} />
+          </div>
+        )
+      }
   }
 }
 
