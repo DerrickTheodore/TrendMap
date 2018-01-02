@@ -18321,7 +18321,8 @@ var App = function (_React$Component) {
     _this.state = {
       trendingTopics: [],
       tweets: [],
-      value: ''
+      value: '',
+      clickedTrendingTopic: ''
     };
     return _this;
   }
@@ -18338,8 +18339,8 @@ var App = function (_React$Component) {
           var len = trend.length;
           trend.originalText = trend.originalText.slice(1, len);
         }
-        _axios2.default.get('http://127.0.0.1:8080/search/tweets-with/' + trend.originalText + '/trends_at/' + trend.location).then(function (results) {
-          _this2.setState({ tweets: results.data });
+        _axios2.default.get('http://127.0.0.1:8080/search/tweets-with/' + trend.originalText + '/trends_at/NYC').then(function (results) {
+          _this2.setState({ tweets: results.data, clickedTrendingTopic: '#' + trend.originalText });
         }).catch(function (err) {
           return console.error(err);
         });
@@ -18374,7 +18375,7 @@ var App = function (_React$Component) {
         trend.originalText = trend.originalText.slice(1, len);
       }
       _axios2.default.get('http://127.0.0.1:8080/search/tweets-with/' + trend.originalText + '/trends_at/' + trend.location).then(function (results) {
-        _this4.setState({ tweets: results.data });
+        _this4.setState({ tweets: results.data, clickedTrendingTopic: '#' + trend.originalText });
       }).catch(function (err) {
         return console.error(err);
       });
@@ -18384,11 +18385,32 @@ var App = function (_React$Component) {
     value: function render() {
       var _this5 = this;
 
-      if (!(this.state.trendingTopics.length && this.state.tweets.length)) {
+      if (!this.state.trendingTopics.length) {
         return _react2.default.createElement(
           'h1',
           null,
           'Loading...'
+        );
+      } else if (!this.state.tweets.length) {
+        return _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            'h4',
+            null,
+            'Search trends in area'
+          ),
+          _react2.default.createElement('input', { type: 'text', value: this.state.value, onChange: function onChange(e) {
+              return _this5.handleInputChange(e);
+            } }),
+          _react2.default.createElement(
+            'button',
+            { type: 'submit', onClick: function onClick(e) {
+                return _this5.handleTrendAreaSearch(e);
+              } },
+            'search'
+          ),
+          _react2.default.createElement(_TreadingTable2.default, { handleTrendClick: this.handleTrendClick.bind(this), trends: this.state.trendingTopics })
         );
       } else {
         return _react2.default.createElement(
@@ -18410,7 +18432,7 @@ var App = function (_React$Component) {
             'search'
           ),
           _react2.default.createElement(_TreadingTable2.default, { handleTrendClick: this.handleTrendClick.bind(this), trends: this.state.trendingTopics }),
-          _react2.default.createElement(_TweetsTable2.default, { tweets: this.state.tweets })
+          _react2.default.createElement(_TweetsTable2.default, { tweets: this.state.tweets, clickedTrendingTopic: this.state.clickedTrendingTopic })
         );
       }
     }
@@ -20916,17 +20938,26 @@ var TweetsTable = function (_React$Component) {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        'table',
+        'div',
         null,
         _react2.default.createElement(
-          'tbody',
+          'h1',
           null,
-          Object.keys(this.props.tweets[0]).map(function (header, index) {
-            return _react2.default.createElement(_TweetsTableRowHead2.default, { key: index, header: header });
-          }),
-          this.props.tweets.map(function (tweet, index) {
-            return _react2.default.createElement(_TweetsTableRow2.default, { tweet: tweet, key: index });
-          })
+          this.props.clickedTrendingTopic
+        ),
+        _react2.default.createElement(
+          'table',
+          null,
+          _react2.default.createElement(
+            'tbody',
+            null,
+            Object.keys(this.props.tweets[0]).map(function (header, index) {
+              return _react2.default.createElement(_TweetsTableRowHead2.default, { key: index, header: header });
+            }),
+            this.props.tweets.map(function (tweet, index) {
+              return _react2.default.createElement(_TweetsTableRow2.default, { tweet: tweet, key: index });
+            })
+          )
         )
       );
     }

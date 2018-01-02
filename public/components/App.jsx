@@ -10,7 +10,8 @@ class App extends React.Component {
     this.state = {
       trendingTopics: [],
       tweets: [],
-      value: ''
+      value: '',
+      clickedTrendingTopic: ''
     }
   }
 
@@ -23,9 +24,9 @@ class App extends React.Component {
         let len = trend.length;
         trend.originalText = trend.originalText.slice(1, len);
       }
-      axios.get(`http://127.0.0.1:8080/search/tweets-with/${trend.originalText}/trends_at/${trend.location}`)
+      axios.get(`http://127.0.0.1:8080/search/tweets-with/${trend.originalText}/trends_at/NYC`)
       .then((results) => {
-        this.setState({tweets: results.data})
+        this.setState({tweets: results.data, clickedTrendingTopic: `#${trend.originalText}`})
       })
       .catch(err => console.error(err));
     })
@@ -52,15 +53,26 @@ class App extends React.Component {
     }
     axios.get(`http://127.0.0.1:8080/search/tweets-with/${trend.originalText}/trends_at/${trend.location}`)
     .then((results) => {
-      this.setState({tweets: results.data})
+      this.setState({tweets: results.data, clickedTrendingTopic: `#${trend.originalText}`})
     })
     .catch(err => console.error(err));
   }
 
   render() {
-      if(!(this.state.trendingTopics.length && this.state.tweets.length)) {
+      if(!(this.state.trendingTopics.length)) {
         return (
           <h1>Loading...</h1>
+        )
+      } else if (!(this.state.tweets.length)) {
+        return (
+          <div>
+            <h4>Search trends in area</h4>
+            <input type="text" value={this.state.value} onChange={(e) => this.handleInputChange(e)}/>
+            <button type="submit" onClick={(e) => this.handleTrendAreaSearch(e)} >search</button>
+
+            <TreadingTable handleTrendClick={this.handleTrendClick.bind(this)} trends={this.state.trendingTopics}/>
+          
+          </div>
         )
       } else {
         return (
@@ -71,7 +83,7 @@ class App extends React.Component {
 
             <TreadingTable handleTrendClick={this.handleTrendClick.bind(this)} trends={this.state.trendingTopics}/>
           
-            <TweetsTable tweets={this.state.tweets} />
+            <TweetsTable tweets={this.state.tweets} clickedTrendingTopic={this.state.clickedTrendingTopic}/>
           </div>
         )
       }

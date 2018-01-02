@@ -14,12 +14,15 @@ class TweetsTable extends React.Component {
 
   render() {
     return (
+      <div>
+      <h1>{this.props.clickedTrendingTopic}</h1>
       <table>
         <tbody>
           {Object.keys(this.props.tweets[0]).map((header, index) => <TweetsTableRowHead key={index} header={header}/>)}
           {this.props.tweets.map((tweet, index) => <TweetsTableRow tweet={tweet} key={index}/>)}
         </tbody>
       </table>
+      </div>
     )
   }
 }
