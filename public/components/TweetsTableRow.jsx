@@ -1,4 +1,5 @@
 import React from 'react';
+import TweetsTableRowData from './TweetsTableRowData.jsx';
 
 class TweetsTableRow extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class TweetsTableRow extends React.Component {
   render() {
     return (
       <tr>
-        {['[[[', this.props.tweet.user, ']]]', this.props.tweet.translatedText, '_', this.props.tweet.detectedSourceLanguage, '_', this.props.tweet.originalText]}
+        {Object.values(this.props.tweet).map(tweet => <TweetsTableRowData data={tweet}/>)}
       </tr>
     )
   }

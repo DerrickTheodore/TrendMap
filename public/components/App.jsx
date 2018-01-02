@@ -14,6 +14,25 @@ class App extends React.Component {
     }
   }
 
+  componentDidMount() {
+    axios.get(`http://127.0.0.1:8080/search/trends-at/NYC`)
+    .then((results) => {
+      this.setState({trendingTopics: results.data})
+      let trend = this.state.trendingTopics[0]
+      if(trend.originalText[0] === '#') {
+        let len = trend.length;
+        trend.originalText = trend.originalText.slice(1, len);
+      }
+      axios.get(`http://127.0.0.1:8080/search/tweets-with/${trend.originalText}/trends_at/${trend.location}`)
+      .then((results) => {
+        // console.log('check', results)
+        this.setState({tweets: results.data})
+      })
+      .catch(err => console.error(err));
+    })
+    .catch(err => console.error(err));
+  }
+
   handleInputChange(e) {
     this.setState({value: e.target.value})
   }
@@ -32,7 +51,6 @@ class App extends React.Component {
       let len = trend.originalText.length;
       trend.originalText = trend.originalText.slice(1, len);
     }
-    console.log('check1', trend.originalText);
     axios.get(`http://127.0.0.1:8080/search/tweets-with/${trend.originalText}/trends_at/${trend.location}`)
     .then((results) => {
       this.setState({tweets: results.data.statuses})

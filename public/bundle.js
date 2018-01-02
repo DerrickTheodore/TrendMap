@@ -18327,6 +18327,28 @@ var App = function (_React$Component) {
   }
 
   _createClass(App, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      _axios2.default.get('http://127.0.0.1:8080/search/trends-at/NYC').then(function (results) {
+        _this2.setState({ trendingTopics: results.data });
+        var trend = _this2.state.trendingTopics[0];
+        if (trend.originalText[0] === '#') {
+          var len = trend.length;
+          trend.originalText = trend.originalText.slice(1, len);
+        }
+        _axios2.default.get('http://127.0.0.1:8080/search/tweets-with/' + trend.originalText + '/trends_at/' + trend.location).then(function (results) {
+          // console.log('check', results)
+          _this2.setState({ tweets: results.data });
+        }).catch(function (err) {
+          return console.error(err);
+        });
+      }).catch(function (err) {
+        return console.error(err);
+      });
+    }
+  }, {
     key: 'handleInputChange',
     value: function handleInputChange(e) {
       this.setState({ value: e.target.value });
@@ -18334,11 +18356,11 @@ var App = function (_React$Component) {
   }, {
     key: 'handleTrendAreaSearch',
     value: function handleTrendAreaSearch(e) {
-      var _this2 = this;
+      var _this3 = this;
 
       e.preventDefault();
       _axios2.default.get('http://127.0.0.1:8080/search/trends-at/' + this.state.value).then(function (results) {
-        _this2.setState({ trendingTopics: results.data });
+        _this3.setState({ trendingTopics: results.data });
       }).catch(function (err) {
         return console.error(err);
       });
@@ -18346,15 +18368,14 @@ var App = function (_React$Component) {
   }, {
     key: 'handleTrendClick',
     value: function handleTrendClick(trend) {
-      var _this3 = this;
+      var _this4 = this;
 
       if (trend.originalText[0] === '#') {
         var len = trend.originalText.length;
         trend.originalText = trend.originalText.slice(1, len);
       }
-      console.log('check1', trend.originalText);
       _axios2.default.get('http://127.0.0.1:8080/search/tweets-with/' + trend.originalText + '/trends_at/' + trend.location).then(function (results) {
-        _this3.setState({ tweets: results.data.statuses });
+        _this4.setState({ tweets: results.data.statuses });
       }).catch(function (err) {
         return console.error(err);
       });
@@ -18362,7 +18383,7 @@ var App = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _this4 = this;
+      var _this5 = this;
 
       return _react2.default.createElement(
         'div',
@@ -18373,12 +18394,12 @@ var App = function (_React$Component) {
           'Search trends in area'
         ),
         _react2.default.createElement('input', { type: 'text', value: this.state.value, onChange: function onChange(e) {
-            return _this4.handleInputChange(e);
+            return _this5.handleInputChange(e);
           } }),
         _react2.default.createElement(
           'button',
           { type: 'submit', onClick: function onClick(e) {
-              return _this4.handleTrendAreaSearch(e);
+              return _this5.handleTrendAreaSearch(e);
             } },
           'search'
         ),
@@ -20860,6 +20881,10 @@ var _TweetsTableRow = __webpack_require__(35);
 
 var _TweetsTableRow2 = _interopRequireDefault(_TweetsTableRow);
 
+var _TweetsTableRowHead = __webpack_require__(63);
+
+var _TweetsTableRowHead2 = _interopRequireDefault(_TweetsTableRowHead);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20889,8 +20914,11 @@ var TweetsTable = function (_React$Component) {
         _react2.default.createElement(
           'tbody',
           null,
-          this.props.tweets.map(function (tweet) {
-            return _react2.default.createElement(_TweetsTableRow2.default, { tweet: tweet, key: tweet.id });
+          Object.keys(this.props.tweets[0]).map(function (header, index) {
+            return _react2.default.createElement(_TweetsTableRowHead2.default, { key: index, header: header });
+          }),
+          this.props.tweets.map(function (tweet, index) {
+            return _react2.default.createElement(_TweetsTableRow2.default, { tweet: tweet, key: index });
           })
         )
       );
@@ -20946,6 +20974,10 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _TweetsTableRowData = __webpack_require__(62);
+
+var _TweetsTableRowData2 = _interopRequireDefault(_TweetsTableRowData);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20972,7 +21004,9 @@ var TweetsTableRow = function (_React$Component) {
       return _react2.default.createElement(
         'tr',
         null,
-        ['[[[', this.props.tweet.user, ']]]', this.props.tweet.translatedText, '_', this.props.tweet.detectedSourceLanguage, '_', this.props.tweet.originalText]
+        Object.values(this.props.tweet).map(function (tweet) {
+          return _react2.default.createElement(_TweetsTableRowData2.default, { data: tweet });
+        })
       );
     }
   }]);
@@ -22550,6 +22584,60 @@ module.exports = function spread(callback) {
   };
 };
 
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var TweetsTableRowData = function TweetsTableRowData(props) {
+  return _react2.default.createElement(
+    'td',
+    null,
+    props.data
+  );
+};
+
+exports.default = TweetsTableRowData;
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var TweetsTableRowHead = function TweetsTableRowHead(props) {
+  return _react2.default.createElement(
+    'th',
+    null,
+    props.header
+  );
+};
+
+exports.default = TweetsTableRowHead;
 
 /***/ })
 /******/ ]);

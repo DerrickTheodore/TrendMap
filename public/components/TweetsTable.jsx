@@ -1,5 +1,8 @@
 import React from 'react';
 import TweetsTableRow from './TweetsTableRow.jsx';
+import TweetsTableRowHead from './TweetsTableRowHead.jsx';
+
+
 
 class TweetsTable extends React.Component {
   constructor(props) {
@@ -13,7 +16,8 @@ class TweetsTable extends React.Component {
     return (
       <table>
         <tbody>
-          {this.props.tweets.map(tweet => <TweetsTableRow tweet={tweet} key={tweet.id}/>)}
+          {Object.keys(this.props.tweets[0]).map((header, index) => <TweetsTableRowHead key={index} header={header}/>)}
+          {this.props.tweets.map((tweet, index) => <TweetsTableRow tweet={tweet} key={index}/>)}
         </tbody>
       </table>
     )
