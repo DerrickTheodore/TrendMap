@@ -3,15 +3,19 @@ const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config');
 const app = express();
+const router = require('./router.js');
 
 const compiler = webpack(webpackConfig);
 
-app.use(express.static(__dirname + '/www'));
 
-const server = app.listen(4568, function() {
-  const host = server.address().address;
+app.use(express.static(__dirname + '/public'));
+app.use('/search', router);
+
+
+const server = app.listen(process.env.PORT || 8080, function() {
   const port = server.address().port;
-  console.log('Google Map Practice app listening at http://%s:%s',
-  host, port);
+  console.log(`App listening at port ${port}`)
 })
+
+module.exports = router;
 

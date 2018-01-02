@@ -16,13 +16,18 @@ Compile Webpack
 ---
 
 ```
-npm run build
+npm run wp
 ``` 
 
 Start project server with this command:
 
 ```
-npm start
+npm run sev
+```
+Start project live reload server with this command:
+
+```
+npm run liv
 ```
 
 
