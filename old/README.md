@@ -1,4 +1,4 @@
-# WTT: What'sTheTrend?
+# React-Project-Boilerplate
 ---
 
 Welcome.
@@ -10,24 +10,24 @@ Setup Dependencies
 ---
 
 ```
-npm install 
+npm install --save || i -S
 
 Compile Webpack
 ---
 
 ```
-npm run react-dev
+npm run wp
 ``` 
 
 Start project server with this command:
 
 ```
-npm start
+npm run sev
 ```
 Start project live reload server with this command:
 
 ```
-npm run live-reload
+npm run liv
 ```
 
 

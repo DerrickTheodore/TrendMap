@@ -1,0 +1,369 @@
+
+a:-webkit-any-link {
+  color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey*/
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.trending-table-wrapper {
+  overflow-y: auto;
+  margin: 0 6px 1px 2px;
+  border-radius: 0 1px 5px 5px;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+}
+
+.trending-table {
+  margin: 0;
+  table-layout: fixed;
+  width: 100%;
+  background: #0b61d6;
+  border-spacing: 0 12px;
+}
+
+.trending-table-row-button-image {
+  width: 65px;
+  height: auto;
+}
+
+.trending-table-row-button {
+  background-color: #7fff00;
+  border-radius: 5px;
+}
+
+.trending-table-row {
+  /* background-color: #00ced1 */
+}
+
+.trending-table-data {
+  white-space: normal;
+  word-wrap: break-word;
+  border: solid black;
+  border-right: 0;
+  border-left: 0;
+  background-color: white;
+  height: 50px;
+}
+
+.trending-table-data:first-child {
+  white-space: normal;
+  word-wrap: break-word;
+  border: solid black;
+  border-right: 0;
+  background-color: white;
+  height: 50px;
+}
+
+.trending-table-data:last-child {
+  white-space: normal;
+  word-wrap: break-word;
+  border: solid #000000;
+  border-left: 0;
+  background-color: #ffffff;
+  height: 50px;
+}
+
+.trending-table-header-table {
+  table-layout: fixed;
+  width: 98%;
+  background: #0b61d6;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-radius: 0 5px 0 0;
+  margin: 0 1px 0 2px;
+}
+
+.trending-table-header {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
+  height: 25px;
+  color: gold;
+  font-size: x-large;
+}
+
+.trending-table-search {
+  width: 50%;
+  height: 0;
+  float: right;
+}
+
+.trending-table-search-font {
+  position: absolute;
+  top: 5px;
+  color: #ffffff;
+}
+
+.trending-table-search-input {
+  position: relative;
+  right: -65px;
+  top: 3px;
+}
+
+.trending-table-header:last-child {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  height: 25px;
+  color: gold;
+}
+
+.tweet-list-wrapper {
+  overflow-y: auto;
+  margin: 0 6px 1px 2px;
+  border-radius: 0 1px 5px 5px;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+}
+
+.tweet-list {
+  margin: 1px;
+  border-radius: 5px 5px 5px 5px;
+  width: 100%;
+  background: #3498db;
+  /* for Background coloring */
+  overflow: -webkit-paged-y;
+}
+.tweet-list .tweet {
+	float: left;
+  min-width: 315px;
+  min-height: 215px;
+  box-sizing: border-box;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 6%;
+  max-width: min-content;
+}
+
+.tweet-div {
+  position: relative;
+}
+
+.tweet-image-div {
+  position: absolute;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  top: -2px;
+  right: 90%;
+}
+
+.tweet-image {
+  width: 45px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.tweet-user-name {
+  left: 55px;
+  top: -65px;
+  position: relative;
+  font-size: small;
+  width: 87px;
+  padding: 1px;
+}
+
+.tweet-user-screen-name {
+  left: 56px;
+  top: -84px;
+  position: relative;
+  font-size: x-small;
+  padding: 1px 0 0 0;
+}
+
+.tweet-user-verified-image {
+  left: 143px;
+  top: -118px;
+  position: relative;
+  width: 20px;
+  height: auto;
+}
+
+.tweet-text {
+  position: absolute;
+  top: 40px;
+  left: 4px;
+  /* font-size: x-small; */
+  font-family: sans-serif;
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+.tweet-footer {
+  position: inherit;
+  height: 60px;
+  bottom: -140px;
+  max-width: min-content;
+}
+
+.tweet-counter-div {
+  width: 135px;
+  height: 60px;
+  margin: 0;
+}
+
+.tweet-retweet-div {
+  position: relative;
+  left: -5px;
+  bottom: 5px;
+}
+
+.tweet-like-div {
+  position: relative;
+  left: 55px;
+  top: -35px;
+}
+
+.tweet-retweet-text {
+  left: 55px;
+  top: -65px;
+  position: initial;
+  font-size: xx-small;
+  width: 87px;
+  padding: 1px;
+  margin: 0;
+}
+
+.tweet-like-text {
+  left: 55px;
+  top: -65px;
+  position: initial;
+  font-size: xx-small;
+  width: 87px;
+  padding: 1px;
+  margin: 0;
+}
+
+.tweet-retweet-counter {
+  margin: 0;
+}
+
+.tweet-like-counter {
+  margin: 0;
+}
+
+.tweet-retweeter-list {
+  position: relative;
+  top: -65px;
+  left: 90px;
+  height: 35px;
+  width: 210px;
+}
+
+.tweet-retweeter-image {
+  float: right;
+  position: relative;
+  width: 30px;
+  height: auto;
+  border-radius: 50px;
+  margin: 2px;
+}
+
+.tweet-timestamp {
+  position: relative;
+  font-size: x-small;
+  top: -95px;
+  left: -5px;
+  height: 1em;
+  width: 10em;
+}
+
+.tweet-translate-button {
+  position: absolute;
+  right: 0;
+  background: darksalmon;
+  border-radius: 5px;
+}
+
+/*float layout*/
+.float-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.float-container:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.float-item {
+  float: left;
+}
+.nav {
+  list-style-type: none;
+  margin: 0 0 0 2px;
+  padding: 0;
+}
+
+.tab {
+  display: inline;
+  margin: 0 10px;
+  text-decoration: none;
+  text-decoration: #f3f3f3;
+}
+
+.nav-button {
+  border-radius: 20px 20px 0 0;
+  padding: 12px 12px 5px 12px;
+  margin: 5px 0 0 0;
+  font: icon;
+  font-size: large;
+  text-align: center;
+  height: 25px;
+  width: 75px;
+}
+.trends-button {
+  background: #0b61d6;
+}
+
+.auth-button {
+  background: #ff0000;
+  position: fixed;
+  right: 10px;
+  top: 0;
+  border-radius: 5px 5px;
+  padding: 5px;
+}
+.tweets-button {
+  background: #3a98d8;
+}
+.favorites-button {
+  background: #75c127;
+}
+
+.hash-header {
+  text-align: -webkit-center;
+  background: #3497db;
+  width: 98%;
+  color: white;
+  font: icon;
+  font-size: -webkit-xxx-large;
+  margin: 0;
+  padding-left: 2px;
+  border-radius: 3px 5px 5px 9px
+}

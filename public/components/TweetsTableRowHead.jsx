@@ -1,11 +1,11 @@
-import React from 'react';
+// import React from 'react';
 
-const TweetsTableRowHead = (props) => {
-  return (
-    <th>
-      {props.header}
-    </th>
-  )
-}
+// const TweetsTableRowHead = (props) => {
+//   return (
+//     <th className="tweet-table-header">
+//       {props.header}
+//     </th>
+//   )
+// }
 
-export default TweetsTableRowHead;
+// export default TweetsTableRowHead;

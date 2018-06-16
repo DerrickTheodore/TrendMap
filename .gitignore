@@ -1,3 +1,4 @@
 node_modules
 www/bundle.js
 credentials.js
+package-lock.json

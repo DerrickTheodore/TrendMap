@@ -1,29 +1,25 @@
 {
-  "name": "trendmap",
+  "name": "react-boilerplate",
   "version": "1.0.0",
-  "engines": {
-    "node": "8.9.4"
-  },
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "react-dev": "webpack -d --watch",
-    "build": "webpack --config webpack.config.js",
-    "start": "node server.js",
-    "live-reload": "live-server public"
+    "wp": "webpack --watch",
+    "sev": "nodemon server.js",
+    "liv": "live-server public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DerrickTheodore/trendmap.git"
+    "url": "git+https://github.com/DerrickTheodore/react-project-boilerplate.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DerrickTheodore/trendmap/issues"
+    "url": "https://github.com/DerrickTheodore/react-project-boilerplate/issues"
   },
-  "homepage": "https://github.com/DerrickTheodore/trendmap#readme",
+  "homepage": "https://github.com/DerrickTheodore/react-project-boilerplate#readme",
   "dependencies": {
     "axios": "^0.17.1",
     "babel-core": "^6.26.0",
@@ -33,13 +29,9 @@
     "babel-preset-react": "^6.24.1",
     "city-to-coords": "^1.1.0",
     "express": "^4.16.2",
-    "google-maps-react": "^1.1.2",
     "google-translate": "^2.0.5",
-    "path": "^0.12.7",
     "react": "^16.2.0",
-    "react-center-component": "^3.0.0",
     "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2",
     "twitter-node-client": "0.0.6",
     "webpack": "^3.10.0",
     "webpack-dev-middleware": "^2.0.2"
