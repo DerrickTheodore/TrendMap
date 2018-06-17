@@ -1,33 +1,12 @@
-# WTT: What'sTheTrend?
----
+# Trend Map 
 
-Welcome.
+![Desktop[homepage] View](app_images/Trend_Map_Desktop(Trend_View).jpg)
+![Desktop[tweet page] View](app_images/Trend_Map_Desktop(Tweet_View).jpg)
 
-Usage
----
 
-Setup Dependencies
----
+![Mobile[homepage] View](app_images/Trend_Map_Mobile(Trend_View).jpg)
+![Mobile[tweet page] View](app_images/Trend_Map_Mobile(Tweet_View).jpg)
 
-```
-npm install 
-
-Compile Webpack
----
-
-```
-npm run react-dev
-``` 
-
-Start project server with this command:
-
-```
-npm start
-```
-Start project live reload server with this command:
-
-```
-npm run live-reload
-```
-
+![Tablet[homepage] View](app_images/Trend_Map_Tablet(Trend_View).jpg)
+![Tablet[tweet page] View](app_images/Trend_Map_Tablet(Tweet_View).jpg)
 
