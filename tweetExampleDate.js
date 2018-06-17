@@ -1,10 +1,10 @@
 module.exports = {
   tweets: [
       {
-      "translatedText": `${"T".repeat(280)}`,
+      "translatedText": `${"T".repeat(140)}`,
       "detectedSourceLanguage": "English",
-      "originalText": `${"E".repeat(280)}`,
-      "created_at": "Mon Apr 26 06:01:55 +0000 2010",
+      "originalText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aspernatur quo quis vel, fugiat culpa voluptates deleniti beatae debitis qui est reprehenderit!",
+      "created_at": "Mon Apr 26 06:01:55 2010",
       "id_str": "250075927172759552",
       "retweet_count": 24197,
       "user": {
